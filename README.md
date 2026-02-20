@@ -1,43 +1,49 @@
 # PHP to EPUB Conversion Pipeline
 
 ## Overview
-The PHP to EPUB Conversion Pipeline is designed to facilitate the conversion of PHP files into EPUB format, making it easy to create eBooks from PHP-based content.
+A comprehensive PHP to EPUB conversion pipeline that allows users to convert various document formats into EPUB format seamlessly.
 
 ## Features
-- Convert PHP content dynamically to EPUB.
-- Support for various PHP documents including classes, functions, and scripts.
-- Customizable settings for EPUB output.
+- Converts HTML, Markdown, and Plain Text documents to EPUB.
+- Supports customization options for EPUB output like metadata, styles, and more.
+- Batch processing to convert multiple documents at once.
+- Error handling and logging functionality for troubleshooting.
 
 ## Installation
-1. Clone the repository:
+1. Make sure you have PHP installed on your machine.
+2. Clone the repository:
    ```bash
    git clone https://github.com/Natalie-Ca/php-to-epub-pipeline.git
-   ```
-2. Navigate to the project folder:
-   ```bash
    cd php-to-epub-pipeline
    ```
-3. Install the necessary dependencies:
+3. Install the required dependencies:
    ```bash
    composer install
    ```
 
 ## Usage
-To convert a PHP file to EPUB format, use the following command:
+To convert a file to EPUB, use the following command:
 ```bash
-php convert.php <source-file.php> <output-file.epub>
+php convert.php input_file output_file.epub
 ```
-Replace `<source-file.php>` with the path to the PHP file you want to convert, and `<output-file.epub>` with the desired output file name.
 
-## Configuration
-- Configuration settings can be found in `config.php`.
-- Modify the parameters according to your specific needs, including output paths and formatting options.
+## Examples
+### Converting an HTML file
+```bash
+php convert.php document.html output.epub
+```
+### Converting a Markdown file
+```bash
+php convert.php document.md output.epub
+```
+
+## Troubleshooting
+- Ensure all dependencies are installed if you encounter errors during conversion.
+- Check error logs for specific issues if a conversion fails.
+- For common issues, refer to the [issues section](https://github.com/Natalie-Ca/php-to-epub-pipeline/issues) of this repository.
 
 ## Contributing
-We welcome contributions from the community. If you wish to contribute, please fork the repository and create a pull request with a detailed description of the changes.
+Contributions are welcome! Please open an issue or submit a pull request with your suggestions or improvements.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For any questions or feedback, please reach out to the repository maintainer via GitHub issues.
+This project is licensed under the MIT License. See the LICENSE file for details.
